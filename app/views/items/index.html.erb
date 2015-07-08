@@ -1,0 +1,10 @@
+<% @items.each do |item| %>
+  <div>
+    <h1><%= item.name %></h1><br />
+    <i><%= item.serial %></i><br />
+    <p><%= item.description %></p><br />
+  </div>
+
+  <hr />
+<% end %>
+<%= link_to 'New item', new_item_path, :class => 'btn btn-primary' %>

@@ -1,0 +1,13 @@
+<h1>New Item</h1>
+
+
+  <h2>Enter Your Place Details</h2>
+
+  <%= simple_form_for @item do |f| %>
+    <%= f.input :name %>
+    <%= f.input :serial %>
+    <%= f.input :description %>
+    <br />
+    <%= f.submit 'Create', :class => 'btn btn-info pull-right' %>
+  <% end %>
+
